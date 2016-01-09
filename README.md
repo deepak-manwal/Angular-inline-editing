@@ -23,6 +23,18 @@ Funcationality supports
 
 Each functionality **Update everytime in localstorage** everytime except **Server (Fetching from server)**. Fetching from server always checks if there is no data in **Localstorage** then update in localstorage. 
 
+Dependencies used
+--------
+
+ * Angular JS
+ * Underscore JS
+ * Jquery UI
+ * ngStorage
+ * Bootstrap
+
+
+**Note:** Design is completly responsive, i have used table instead of div.
+
 
 
 
