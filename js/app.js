@@ -21,6 +21,7 @@ function MyController($localStorage, $scope, $http) {
 
 	vm.removeItem = function(index) {
         vm.data.splice(index, 1);
+        $localStorage.data = vm.data;
     };
 
     vm.addRow = function(index) {
@@ -60,7 +61,7 @@ function MyController($localStorage, $scope, $http) {
         */
 		$http.get(SERVER_URL)
             .then(function (response) {
-                vm.response.data;
+                vm.data = response.data;
             });
 		if(typeof $localStorage.data == 'undefined')
 			$localStorage.data = vm.data;
